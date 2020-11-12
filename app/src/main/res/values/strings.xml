@@ -5,4 +5,6 @@
     <string name="texto_boton_falso">Falso</string>
     <string name="texto_boton_anterior">Anterior</string>
     <string name="texto_boton_siguiente">Siguiente</string>
+    <string name="texto_respuesta_correcta">¡Correcto!</string>
+    <string name="texto_respuesta_incorrecto">¡Incorrecto!</string>
 </resources>

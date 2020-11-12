@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
@@ -11,7 +12,8 @@
         android:layout_height="wrap_content"
         android:text="@string/texto_pregunta"
         android:layout_margin="16dp" android:textSize="18dp"
-        android:textStyle="bold" android:textAlignment="center"/>
+        android:textStyle="bold" android:textAlignment="center"
+        android:id="@+id/pregunta_text_view"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -24,15 +26,18 @@
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:minWidth="60dp"
-            android:text="@string/texto_boton_cierto"/>
+            android:id = "@+id/cierto_button"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:minWidth="60dp"
-            android:text="@string/texto_boton_falso"/>
+            android:text="@string/texto_boton_falso"
+            android:id ="@+id/falso_button"/>
+
     </LinearLayout>
+
         <LinearLayout
 
             android:layout_width="wrap_content"
@@ -45,13 +50,19 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:minWidth="80dp"
-                android:text="@string/texto_boton_anterior"/>
+                android:text="@string/texto_boton_anterior"
+                android:id ="@+id/anterior_button"/>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:minWidth="80dp"
-                android:text="@string/texto_boton_siguiente"/>
+                android:text="@string/texto_boton_siguiente"
+                android:id="@+id/siguiente_button"
+                tools:ignore="ButtonStyle"/>
+
+
+
         </LinearLayout>
 </LinearLayout>
